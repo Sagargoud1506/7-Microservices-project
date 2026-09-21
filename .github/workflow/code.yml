@@ -1,0 +1,14 @@
+name: Code
+
+on:
+  push:
+
+jobs:
+  code-checkout:
+    runs-on: Ubuntu-latest
+    steps:
+      -name: Clone the code
+       uses: Actions/checkout@v7
+
+      -name: print the massage
+       run: Echo "code cloned"
